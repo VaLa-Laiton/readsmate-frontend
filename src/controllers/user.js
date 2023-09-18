@@ -1,4 +1,5 @@
 const URL_API = import.meta.env.VITE_URL_API;
+console.log(URL_API)
 
 // SignUp
 export const signupUser = async ({ nickname, email, password }) => {
