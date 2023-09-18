@@ -1,4 +1,6 @@
-const URL_API = import.meta.env.VITE_URL_API;
+const URL_API =
+  import.meta.env.VITE_URL_API ||
+  "https://readsmate-restapi-production.up.railway.app/api/";
 
 export const getArticles = async () => {
   const url = `${URL_API}article`;

@@ -1,5 +1,7 @@
-const URL_API = import.meta.env.VITE_URL_API;
-console.log(URL_API)
+const URL_API =
+  import.meta.env.VITE_URL_API ||
+  "https://readsmate-restapi-production.up.railway.app/api/";
+console.log(URL_API);
 
 // SignUp
 export const signupUser = async ({ nickname, email, password }) => {
