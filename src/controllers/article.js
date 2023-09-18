@@ -1,5 +1,7 @@
+const URL_API = import.meta.env.VITE_URL_API;
+
 export const getArticles = async () => {
-  const url = "http://localhost:3000/api/article";
+  const url = `${URL_API}article`;
 
   const options = {
     method: "GET",
@@ -16,7 +18,7 @@ export const getArticles = async () => {
 };
 
 export const createArticle = async ({ title, urlFile, token }) => {
-  const url = "http://localhost:3000/api/article";
+  const url = `${URL_API}article`;
 
   const data = {
     title: title,
@@ -42,7 +44,7 @@ export const createArticle = async ({ title, urlFile, token }) => {
 };
 
 export const deleteArticle = async ({ articleId, token }) => {
-  const url = `http://localhost:3000/api/article/${articleId}`;
+  const url = `${URL_API}article/${articleId}`;
 
   const options = {
     method: "DELETE",

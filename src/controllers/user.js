@@ -1,6 +1,8 @@
+const URL_API = import.meta.env.VITE_URL_API;
+
 // SignUp
 export const signupUser = async ({ nickname, email, password }) => {
-  const url = "http://localhost:3000/api/user/sign-up";
+  const url = `${URL_API}user/sign-up`;
 
   const data = {
     nickname: nickname,
@@ -37,7 +39,7 @@ export const signupUser = async ({ nickname, email, password }) => {
 
 // Login
 export const loginUser = async ({ email, password }) => {
-  const url = "http://localhost:3000/api/user/log-in";
+  const url = `${URL_API}user/log-in`;
 
   const data = {
     email: email,
@@ -82,7 +84,7 @@ export const updateUser = async ({
   password,
   token,
 }) => {
-  const url = `http://localhost:3000/api/user/${userId}`;
+  const url = `${URL_API}/user/${userId}`;
 
   const data = {};
 
@@ -120,7 +122,7 @@ export const updateUser = async ({
 
 // Delete User
 export const deleteUser = async ({ userId, token }) => {
-  const url = `http://localhost:3000/api/user/${userId}`;
+  const url = `${URL_API}user/${userId}`;
 
   const options = {
     method: "DELETE",
