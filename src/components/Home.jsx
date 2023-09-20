@@ -17,7 +17,7 @@ export const Home = () => {
   return (
     <>
       <div className="container">
-        <div className="d-flex">
+        <div className="d-flex flex-column flex-md-row justify-content-center align-items-center">
           <div style={{ width: "50%" }} className="d-flex justify-content-center align-items-center">
             <div>
               <h1
@@ -42,8 +42,8 @@ export const Home = () => {
               </p>
             </div>
           </div>
-          <div style={{ width: "50%" }}>
-            <img src={landingImg} style={{ width: "100%" }} />
+          <div style={{ width: "50%" }} className="d-flex justify-content-center align-items-center">
+            <img src={landingImg} style={{ width: "300px" }} />
           </div>
         </div>
         <p className="w-75 mx-auto mt-5">

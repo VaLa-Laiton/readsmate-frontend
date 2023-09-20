@@ -4,17 +4,18 @@ import logoNavbar from "../../assets/nameBrand.png";
 export const NavNotUser = () => {
   return (
     <>
-      <nav className="shadow-lg mb-3" style={{backgroundColor: "#212A3E"}}>
-        <div className="navbar navbar-expand-lg container">
+      <nav className="shadow-lg mb-3" style={{ backgroundColor: "#212A3E" }}>
+        <div className="navbar navbar-expand-lg container navbar-dark">
           <div className="container-fluid">
             <Link className="pb-2" to={"/"}>
               <img
                 src={logoNavbar}
-                style={{ height: "47px" }}
-                className="navbar-brand"
+                style={{ height: "43px" }}
+                className="navbar-brand img-fluid"
               />
             </Link>
             <button
+              style={{ marginTop: "-9px" }}
               className="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"

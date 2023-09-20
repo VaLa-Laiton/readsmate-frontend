@@ -14,16 +14,17 @@ export const NavUser = () => {
   return (
     <>
       <nav className="shadow-lg mb-3" style={{backgroundColor: "#212A3E"}}>
-        <div className="navbar navbar-expand-lg container">
+        <div className="navbar navbar-expand-lg container navbar-dark">
           <div className="container-fluid">
             <Link className="pb-2" to={"/"}>
               <img
                 src={logoNavbar}
-                style={{ height: "47px" }}
+                style={{ height: "40px" }}
                 className="navbar-brand"
               />
             </Link>
             <button
+              style={{ marginTop: "-9px" }}
               className="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
